@@ -72,7 +72,7 @@ img {
 }
 
 .menu-icono{
-    width: 25px;
+    width: 80px;
 }
 
 .menu label{
@@ -308,3 +308,98 @@ h3{
     margin-bottom: 10px;
 }
 
+@media (max-width:991px) {
+    .menu{
+        padding: 30px;
+        display: flex;
+        
+    }
+
+    .menu label{
+        display: initial;
+
+    }
+
+    .contacto{
+        max-width: 80%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+
+    .contacto-info {
+        flex-direction: column;
+    }
+
+    #mapa{
+        margin-top: 80px;
+        max-width: 80%;
+        overflow: hidden;
+        margin-left: auto; /* Centra el mapa */
+        margin-right: auto; /* Centra el mapa */
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #FFFFFF;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 80px 30px 15px 30px ;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .img_morin{
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .borrar-todo{
+        display: none;
+    }
+
+
+
+}
