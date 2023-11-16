@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300; 400;500; 600; 700; 800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background: url('../imagenes/fondo.jpg') center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8); /* Ajusta el último valor (0.8) para la opacidad */
+    
+}
+
+img {
+    max-width: 30%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+.menu {
+    position : absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_imagen{
+    max-width: 150px;
+}
+
+.img_morin{
+    max-width: 50%;
+    border-radius: 50%;
+      
+}
+
+.menu .navbar ul li {
+    position:relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333128;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #FFFFFF;
+}
+
+.borrar {
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content{
+    padding-top: 40px;
+    display: flex;
+    margin-top: 80px;
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt span{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1 {
+    font-size: 55px ;
+    line-height: 1;
+    color: #333128;
+    margin-bottom: 25px;
+}
+
+.header-txt h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px ;
+    line-height: 1;
+    color: #333128;
+    margin-bottom: 25px;
+}
+
+.card-servicios{
+    text-align: center;
+}
+
+#titulo-servicio{
+    margin-bottom: 30px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+#descripcion-cuida{
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    color: #FFFFFF;
+    border-radius: 25px;
+    text-transform: capitalize;
+    background-color: #181713;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 400px;
+}
+
+.informacion{
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 25px 75px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.informacion-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion-1{
+    width: 30%; 
+    margin-bottom: 20px; 
+}
+
+.informacion-1 img{
+
+    width: 100%; 
+}
+
+h3{
+
+    font-size: 17px;
+    color:#181713;
+    text-transform: capitalize;
+}
+
+.informacion-1 p{
+    margin-bottom: 0;
+}
+
+
+/* contacto */
+.contacto-info{
+    display: flex;
+}
+#mapa{
+    margin-top: 200px;
+    
+    
+}
+
+.contacto {
+    margin-left: 10%;
+    float: right; /* Utiliza float para alinear a la derecha */
+    /* Añade márgenes, rellenos y otros estilos según tus preferencias */
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#titulo-contacto{
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    width: 100%;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.contacto button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Agrega estilos adicionales según sea necesario */
+
+
+/* footer */
+.footer {
+    padding: 50px 0;
+    background-color: #ffffff;
+    clear: both;
+    }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+.link h3 {
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 10px;
+    }
+
+.link a{
+    color: #181713;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
