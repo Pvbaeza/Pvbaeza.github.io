@@ -89,6 +89,28 @@ img {
 
 /*  carrito abajo */
 
+/*CarritoCounter*/
+.cantidad-carrito {
+    margin-top: 23px;
+    background-color: rgba(227, 187, 187, 0.7);
+    color: white;
+    font-size: 11px;
+    border-radius: 50%; /* Cambiado a 50% para que sea un círculo */
+    width: 20px; /* Ajustado para permitir espacio suficiente para dos dígitos */
+    height: 20px;
+    margin-left: -18px;
+    line-height: 20px; /* Alinea verticalmente el texto en el centro */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: none;
+    pointer-events: none;
+}
+
+.ver-carrito{
+    cursor: pointer;
+    display: flex;
+    
+}
+
 .modal-section {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -131,15 +153,19 @@ img {
     cursor: pointer;
 }
 
+.delete-product{
+    cursor: pointer;
+}
+
 .modal-content {
     display: flex;
+    justify-content: space-between;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
     background-color: #fff;
     border-radius: 10px;
-    text-align: center;
     width: 90%; /* Puedes ajustar según tu diseño */
 }
 
@@ -194,6 +220,7 @@ img {
 }
 
 #caja_servicio{
+    
     justify-content: center;
     display: flex;
     flex-direction: row-reverse;
@@ -393,6 +420,7 @@ body {
         display: flex;
         flex-direction: row-reverse;
         margin-left: 35px;
+        
     }
 
 
