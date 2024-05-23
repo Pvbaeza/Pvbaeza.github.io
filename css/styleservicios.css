@@ -248,13 +248,12 @@ img {
 }
 
 .card {
+    padding: 10px;
     margin: 10px;
     max-width: 380px;
-    max-height: 290px;
     margin-bottom: 20px;
     box-sizing: border-box;
     background-color: #ffffff;
-    padding: 10px;
     text-align: center;
     border-radius: 10px; /* Ajusta el valor según tus preferencias */
     overflow: hidden; /* Asegura que las esquinas redondeadas se apliquen correctamente */
