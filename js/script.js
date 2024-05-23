@@ -14,6 +14,7 @@ servicios.forEach((servicios) => {
     content.innerHTML = `
         <img src="${servicios.imagen}">
         <h3 class="tituloservicio">${servicios.titulo}</h3>
+        <p>$${servicios.precio}</p>
         <p>${servicios.descripcion}</p>
     `;
     shopContent.append(content);
@@ -51,19 +52,18 @@ servicios.forEach((servicios) => {
             });
         }
         carritocounter();
+        pintarcarrito();
 
     });
 });
 
 
-document.addEventListener("keyup", e => {
+document.addEventListener("keyup", (e) => {
     if (e.target.matches("#buscador")) {
         const searchTerm = e.target.value.toLowerCase();
-
-        document.querySelectorAll(".tituloservicio").forEach(servicio => {
+        document.querySelectorAll(".tituloservicio").forEach((servicio) => {
             const contieneTexto = servicio.textContent.toLowerCase().includes(searchTerm);
             const divServicio = servicio.closest(".todoslosservicios");
-
             if (divServicio) {
                 if (contieneTexto) {
                     divServicio.classList.remove("filtro");
@@ -74,4 +74,5 @@ document.addEventListener("keyup", e => {
         });
     }
 });
+
 
